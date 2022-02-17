@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{f82029f5-9397-4dec-9d91-9a4410fe378b}</ProjectGuid>
+    <RootNamespace>Client</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(Configuration)\Client\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)/../lib/duktape-2.6.0/src;$(ProjectDir)/../lib/dukglue-master/include/;C:\Users\wstep\Desktop\College Documents\2020\CSC481\boost\boost_1_74_0;;C:\Users\wstep\Desktop\College Documents\2020\CSC481\json;C:\Users\wstep\Desktop\College Documents\2020\CSC481\SFML-2.5.1\include;C:\Users\wstep\Desktop\College Documents\2020\CSC481\libzmq-updated</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\wstep\Desktop\College Documents\2020\CSC481\SFML-2.5.1\lib;C:\Users\wstep\Desktop\College Documents\2020\CSC481\libzmq-updated</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libzmq-v141-mt-4_3_3.lib;ws2_32.lib;ogg.lib;vorbis.lib;vorbisfile.lib;vorbisenc.lib;flac.lib;openal32.lib;winmm.lib;freetype.lib;opengl32.lib;sfml-main-d.lib;sfml-graphics-s-d.lib;sfml-window-s-d.lib;sfml-system-s-d.lib;sfml-network-s-d.lib;sfml-audio-s-d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)/../lib/duktape-2.6.0/src;$(ProjectDir)/../lib/dukglue-master/include/;C:\Users\wstep\Desktop\College Documents\2020\CSC481\boost\boost_1_74_0;;C:\Users\wstep\Desktop\College Documents\2020\CSC481\json;C:\Users\wstep\Desktop\College Documents\2020\CSC481\SFML-2.5.1\include;C:\Users\wstep\Desktop\College Documents\2020\CSC481\libzmq-updated</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\wstep\Desktop\College Documents\2020\CSC481\SFML-2.5.1\include;C:\Users\wstep\Desktop\College Documents\2020\CSC481\libzmq-updated</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libzmq-v141-mt-4_3_3.lib;ws2_32.lib;ogg.lib;vorbis.lib;vorbisfile.lib;vorbisenc.lib;flac.lib;openal32.lib;winmm.lib;freetype.lib;opengl32.lib;sfml-main.lib;sfml-graphics-s.lib;sfml-window-s.lib;sfml-system-s.lib;sfml-network-s.lib;sfml-audio-s.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\lib\duktape-2.6.0\src\duktape.c" />
+    <ClCompile Include="AbstractComponent.cpp" />
+    <ClCompile Include="AbstractGameObject.cpp" />
+    <ClCompile Include="AbstractModel.cpp" />
+    <ClCompile Include="AbstractZoneObject.cpp" />
+    <ClCompile Include="AnimateEventHandler.cpp" />
+    <ClCompile Include="Animation.cpp" />
+    <ClCompile Include="Collision.cpp" />
+    <ClCompile Include="CollisionEventHandler.cpp" />
+    <ClCompile Include="DeathZoneObject.cpp" />
+    <ClCompile Include="EventManager.cpp" />
+    <ClCompile Include="Events.cpp" />
+    <ClCompile Include="GameObjectThread.cpp" />
+    <ClCompile Include="GameObjectThreadUnsafe.cpp" />
+    <ClCompile Include="GameTime.cpp" />
+    <ClCompile Include="Gravity.cpp" />
+    <ClCompile Include="InputEventHandler.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Platform.cpp" />
+    <ClCompile Include="PlatformCycle.cpp" />
+    <ClCompile Include="PlatformModel.cpp" />
+    <ClCompile Include="PlatformObject.cpp" />
+    <ClCompile Include="PlatformThread.cpp" />
+    <ClCompile Include="PlayerControl.cpp" />
+    <ClCompile Include="PlayerModel.cpp" />
+    <ClCompile Include="PlayerObject.cpp" />
+    <ClCompile Include="RealTime.cpp" />
+    <ClCompile Include="PlayerThread.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="ScriptEventHandler.cpp" />
+    <ClCompile Include="ScriptManager.cpp" />
+    <ClCompile Include="SpawnZoneObject.cpp" />
+    <ClCompile Include="StringId.cpp" />
+    <ClCompile Include="TranslateZoneObject.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\lib\duktape-2.6.0\src\duktape.h" />
+    <ClInclude Include="..\lib\duktape-2.6.0\src\duk_config.h" />
+    <ClInclude Include="AbstractComponent.h" />
+    <ClInclude Include="AbstractEventHandler.h" />
+    <ClInclude Include="AbstractGameObject.h" />
+    <ClInclude Include="AbstractModel.h" />
+    <ClInclude Include="AbstractThread.h" />
+    <ClInclude Include="AbstractTimeline.h" />
+    <ClInclude Include="AbstractZoneObject.h" />
+    <ClInclude Include="AnimateEventHandler.h" />
+    <ClInclude Include="Collision.h" />
+    <ClInclude Include="CollisionEventHandler.h" />
+    <ClInclude Include="DeathZoneObject.h" />
+    <ClInclude Include="EventManager.h" />
+    <ClInclude Include="Events.h" />
+    <ClInclude Include="GameObjectThread.h" />
+    <ClInclude Include="GameObjectThreadUnsafe.h" />
+    <ClInclude Include="GameTime.h" />
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="Gravity.h" />
+    <ClInclude Include="ScriptEventHandler.h" />
+    <ClInclude Include="InputEventHandler.h" />
+    <ClInclude Include="PlatformCycle.h" />
+    <ClInclude Include="Platform.h" />
+    <ClInclude Include="PlatformModel.h" />
+    <ClInclude Include="PlatformObject.h" />
+    <ClInclude Include="PlatformThread.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerControl.h" />
+    <ClInclude Include="PlayerModel.h" />
+    <ClInclude Include="PlayerObject.h" />
+    <ClInclude Include="PlayerThread.h" />
+    <ClInclude Include="RealTime.h" />
+    <ClInclude Include="ScriptManager.h" />
+    <ClInclude Include="SpawnZoneObject.h" />
+    <ClInclude Include="StringId.h" />
+    <ClInclude Include="TranslateZoneObject.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

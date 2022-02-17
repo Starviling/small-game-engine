@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\GameObjects">
+      <UniqueIdentifier>{f6cfaf5e-8184-4bd7-934b-dfcd073f81ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IDManagement">
+      <UniqueIdentifier>{3661a9f4-9e1c-4895-989e-ed937b474686}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Timeline">
+      <UniqueIdentifier>{02ea1bf1-5775-4dd7-96a3-15e287ebb513}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Threads">
+      <UniqueIdentifier>{daeb3ec8-12fc-4db8-8036-1411c0821cc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameObjects">
+      <UniqueIdentifier>{7a561510-a2f9-4148-88d5-cf2710cd5964}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\IDManagement">
+      <UniqueIdentifier>{69b90640-aa7a-40b1-8981-be645373918a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Threads">
+      <UniqueIdentifier>{8fb48921-f945-41f2-b5f1-2d59c2c3b876}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\OldFiles">
+      <UniqueIdentifier>{4db0d3b6-bbc3-4138-baf8-588734a06dca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\OldFiles">
+      <UniqueIdentifier>{005980fc-2e67-45f7-b033-6f82371343af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameObjects\Models">
+      <UniqueIdentifier>{48cb9508-6364-4efe-a083-dd8c8de2c914}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameObjects\Components">
+      <UniqueIdentifier>{563c6fc9-736d-4875-9a50-f53567322040}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameObjects\Components">
+      <UniqueIdentifier>{98ff1f42-9631-40c4-bf4d-7ad93a66ef96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameObjects\Models">
+      <UniqueIdentifier>{e0b46b2b-648c-4a17-9fa6-e6c16d51eb73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Timeline">
+      <UniqueIdentifier>{a6cde7e6-878d-4911-8904-811f468cb31b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Events">
+      <UniqueIdentifier>{42d2ddfd-20b4-42cc-9633-dcc0c3a70768}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Events">
+      <UniqueIdentifier>{c8d32d46-cd5e-45d2-9ca0-bd2abdb20420}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ScriptManagement">
+      <UniqueIdentifier>{76a101e2-ed98-4d0f-a0cf-ac0f0727a136}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ScriptManagement">
+      <UniqueIdentifier>{6b4b12f9-9542-461c-9469-4842f99739f1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameTime.cpp">
+      <Filter>Source Files\Timeline</Filter>
+    </ClCompile>
+    <ClCompile Include="RealTime.cpp">
+      <Filter>Source Files\Timeline</Filter>
+    </ClCompile>
+    <ClCompile Include="Platform.cpp">
+      <Filter>Source Files\OldFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\OldFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractComponent.cpp">
+      <Filter>Source Files\GameObjects\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation.cpp">
+      <Filter>Source Files\GameObjects\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision.cpp">
+      <Filter>Source Files\GameObjects\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatformCycle.cpp">
+      <Filter>Source Files\GameObjects\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerControl.cpp">
+      <Filter>Source Files\GameObjects\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractModel.cpp">
+      <Filter>Source Files\GameObjects\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatformModel.cpp">
+      <Filter>Source Files\GameObjects\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerModel.cpp">
+      <Filter>Source Files\GameObjects\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractGameObject.cpp">
+      <Filter>Source Files\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatformObject.cpp">
+      <Filter>Source Files\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerObject.cpp">
+      <Filter>Source Files\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="StringId.cpp">
+      <Filter>Source Files\IDManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectThread.cpp">
+      <Filter>Source Files\Threads</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerThread.cpp">
+      <Filter>Source Files\OldFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatformThread.cpp">
+      <Filter>Source Files\OldFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectThreadUnsafe.cpp">
+      <Filter>Source Files\Threads</Filter>
+    </ClCompile>
+    <ClCompile Include="Gravity.cpp">
+      <Filter>Source Files\GameObjects\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractZoneObject.cpp">
+      <Filter>Source Files\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="DeathZoneObject.cpp">
+      <Filter>Source Files\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="SpawnZoneObject.cpp">
+      <Filter>Source Files\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="TranslateZoneObject.cpp">
+      <Filter>Source Files\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimateEventHandler.cpp">
+      <Filter>Source Files\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionEventHandler.cpp">
+      <Filter>Source Files\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="EventManager.cpp">
+      <Filter>Source Files\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="Events.cpp">
+      <Filter>Source Files\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="InputEventHandler.cpp">
+      <Filter>Source Files\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptEventHandler.cpp">
+      <Filter>Source Files\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="ScriptManager.cpp">
+      <Filter>Source Files\ScriptManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\duktape-2.6.0\src\duktape.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AbstractThread.h">
+      <Filter>Header Files\Threads</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractTimeline.h">
+      <Filter>Header Files\Timeline</Filter>
+    </ClInclude>
+    <ClInclude Include="GameTime.h">
+      <Filter>Header Files\Timeline</Filter>
+    </ClInclude>
+    <ClInclude Include="RealTime.h">
+      <Filter>Header Files\Timeline</Filter>
+    </ClInclude>
+    <ClInclude Include="Platform.h">
+      <Filter>Header Files\OldFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files\OldFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractComponent.h">
+      <Filter>Header Files\GameObjects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation.h">
+      <Filter>Header Files\GameObjects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision.h">
+      <Filter>Header Files\GameObjects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatformCycle.h">
+      <Filter>Header Files\GameObjects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerControl.h">
+      <Filter>Header Files\GameObjects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractModel.h">
+      <Filter>Header Files\GameObjects\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatformModel.h">
+      <Filter>Header Files\GameObjects\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerModel.h">
+      <Filter>Header Files\GameObjects\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractGameObject.h">
+      <Filter>Header Files\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatformObject.h">
+      <Filter>Header Files\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerObject.h">
+      <Filter>Header Files\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="StringId.h">
+      <Filter>Header Files\IDManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerThread.h">
+      <Filter>Header Files\OldFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatformThread.h">
+      <Filter>Header Files\OldFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectThread.h">
+      <Filter>Header Files\Threads</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectThreadUnsafe.h">
+      <Filter>Header Files\Threads</Filter>
+    </ClInclude>
+    <ClInclude Include="Gravity.h">
+      <Filter>Header Files\GameObjects\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractZoneObject.h">
+      <Filter>Header Files\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="DeathZoneObject.h">
+      <Filter>Header Files\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="SpawnZoneObject.h">
+      <Filter>Header Files\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="TranslateZoneObject.h">
+      <Filter>Header Files\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractEventHandler.h">
+      <Filter>Header Files\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimateEventHandler.h">
+      <Filter>Header Files\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionEventHandler.h">
+      <Filter>Header Files\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="EventManager.h">
+      <Filter>Header Files\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="Events.h">
+      <Filter>Header Files\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="InputEventHandler.h">
+      <Filter>Header Files\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptEventHandler.h">
+      <Filter>Header Files\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="ScriptManager.h">
+      <Filter>Header Files\ScriptManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\duktape-2.6.0\src\duktape.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\lib\duktape-2.6.0\src\duk_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

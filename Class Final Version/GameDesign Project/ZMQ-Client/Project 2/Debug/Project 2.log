@@ -1,0 +1,5 @@
+﻿  ClientJoinThread.cpp
+  Main.cpp
+C:\Users\wstep\Desktop\College Documents\2020\CSC481\Assignment 1\Project 2\Project 2\Main.cpp(54,27): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  Project 2.vcxproj -> C:\Users\wstep\Desktop\College Documents\2020\CSC481\Assignment 1\Project 2\Debug\Project 2.exe
